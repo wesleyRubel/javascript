@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações Matemáticas</title>
+    <style>
+        div{
+            max-width: 500px;
+            background-color: #4B14C9;
+            padding: 20px;
+        }
+        #num1,#num2{
+            width: 50px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #c09468;
+        }
+        #calcular{
+            background-color: #002396;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+        #soma,#subtracao,#multiplicacao,#divisao,#resto,#potencia{
+            width: 100px;
+            height: 15px;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="num1">Digite o 1 número:</label>
+        <input type="text" id="num1"> <br>
+        <label for="num2">Digite o 2 número:</label>
+        <input type="text" id="num2"> <br>
+        <input type="button" value="Calcular" id="calcular">
+        <hr>
+        <div id="soma"></div>
+        <div id="subtracao"></div>
+        <div id="multiplicacao"></div>
+        <div id="divisao"></div>
+        <div id="resto"></div>
+        <div id="potencia"></div>
+    </div>  
+    <script src="operacoes.js"></script> 
+</body>
+</html>

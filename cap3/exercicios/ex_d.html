@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Triângulo</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            width: 900px;
+            height: 400px;
+            border: 1px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: auto;
+        }
+        img{
+            float: left;
+            margin-right: 60px;
+        }
+        h1{
+            color: darkblue;
+        }
+        #outTipo{
+            float: left;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="images/parOuimpar.webp" alt="Paquimetro">  
+        <h1>Programa Lados de um Triângulo</h1>  
+        <p>
+            <input type="text" id="inLadoA" placeholder="Lado A">
+        </p>
+        <p>
+            <input type="text" id="inLadoB" placeholder="Lado B">
+        </p>
+        <p>
+            <input type="text" id="inLadoC" placeholder="Lado C">
+        </p>
+        <p>
+            <input type="button" value="Verificar Lados" id="btVerificar">
+        </p>
+        <div id="outTipo">
+
+        </div>
+        <h3 id="outTriangulo">
+
+        </h3>
+    </main>   
+    <script src="ex_d.js"></script>  
+</body>
+</html>

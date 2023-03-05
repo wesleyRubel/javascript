@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquímetro</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            width: 900px;
+            height: 400px;
+            border: 1px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: auto;
+        }
+        img{
+            float: left;
+            margin-right: 60px;
+        }
+        h1{
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="images/parOuimpar.webp" alt="Paquimetro">  
+        <h1>Programa Paquímetro</h1>  
+        <p>
+            <input type="text" id="inValor" placeholder="Valor (R$)">
+        </p>
+        <p>
+            <input type="button" value="Confirmar Depósito" id="btConfirmar">
+        </p>
+        <h3 id="outTempo">
+
+        </h3>
+        <h3 id="outTroco">
+
+        </h3>
+    </main> 
+    <script src="ex_c.js"></script>    
+</body>
+</html>

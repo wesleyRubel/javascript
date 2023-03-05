@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica Velocidade</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            width: 900px;
+            height: 400px;
+            border: 1px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: auto;
+        }
+        img{
+            float: left;
+            margin-right: 60px;
+        }
+        h1{
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="images/parOuimpar.webp" alt="Verifica velocidade">  
+        <h1>Programa Verifica Velocidade</h1>  
+        <p>
+            <input type="text" id="inVp" placeholder="Velocidade permitida (Km)">
+        </p>
+        <p>
+            <input type="text" id="inVc" placeholder="Velocidade do condutor (Km)">
+        </p>
+        <p>
+            <input type="button" value="Verificar Velocidade" id="btVerificar">
+        </p>
+        <h3 id="outSituacao">
+
+        </h3>
+    </main> 
+    <script src="ex_b.js"></script>   
+</body>
+</html>

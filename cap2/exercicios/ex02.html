@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lan House JS</title>
+</head>
+
+<body>
+    <h1>Lan House JS</h1>
+    <p>
+        Valor por 15 min de uso R$:
+        <input type="number" id="inValor">
+    </p>
+    <p>
+        Tempo de uso do cliente (min):
+        <input type="number" id="inMinutos">
+    </p>
+    <input type="button" value="Calcular valor a pagar" id="btCalcular">
+    <h3 id="outValor">
+
+    </h3>
+
+    <script>
+        //Exercicio 02 Lan House
+        function calculaValor() {
+            var inValor = document.getElementById("inValor");
+            var inMinutos = document.getElementById("inMinutos");
+            var outValor = document.getElementById("outValor");
+            var valor = inValor.value;
+            var minutos = inMinutos.value;
+            var total = Math.ceil(minutos / 15) * valor;
+            outValor.textContent = "Valor a pagar R$: " + total.toFixed(2);
+        }
+        var btCalcular = document.getElementById("btCalcular");
+        btCalcular.addEventListener("click", calculaValor);
+    </script>
+
+</body>
+
+</html>

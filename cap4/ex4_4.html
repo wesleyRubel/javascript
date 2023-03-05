@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    alert("Para sair digite 0.");
+    //Início da repetição
+    do{
+        var num=Number(prompt("Número: "));
+        if(num==0 || isNaN(num)){
+            var sair=confirm("Confirma saída?: ");
+            if(sair){
+                break; //Sair da repetição
+            }else{
+                continue; //Inicia o laço novamente
+            }
+        }
+        //Verifica se o número é par ou ímpar
+        if(num%2==0){
+           alert("Dobro de "+num+" = "+num*2);
+        }else{
+            alert("Triplo de "+num+" = "+num*3);
+        }
+    }while(true); //Enquanto verdade (só sai do laço pelo break)
+    alert("Bye, bye...");
+</script>

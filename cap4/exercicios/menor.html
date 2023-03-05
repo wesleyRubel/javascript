@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menor Número</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <script>
+        //Função que determina qual o menor número digitado pelo usuário
+        var numero=Number(prompt("Quantos números pretende inserir?:"));
+        if(numero<=0 || isNaN(numero)){
+            alert("O valor numérico informado é inválido.");
+        }else{
+            do{
+                var num=Number(prompt("Digite o 1º número: "));
+                if(isNaN(num)){
+                    alert("Valor inválido.");
+                }
+            }while(isNaN(num));
+            var menor=num;
+            for(var i=2;i<=numero;i++){
+                do{
+                    num=Number(prompt("Digite o "+i+"º número:"));
+                    if(isNaN(num)){
+                        alert("Número inválido.");
+                    }
+                }while(isNaN(num));
+                if(num<menor){
+                    menor=num;
+                }
+            }
+            alert("O menor número digitado foi: "+menor);
+        }
+   </script>
+</body>
+</html>
